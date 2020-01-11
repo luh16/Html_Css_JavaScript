@@ -34,7 +34,16 @@ body {
 }
 .active{
     color: #19dafa !important;
+    
 }
+a:link, a:visited {
+    color: #b2b1b1;
+    text-decoration: none;
+	}
+a:hover {
+	color: #19dafa
+	}
+
 .sigup-btn{
     top: 40px;
     right: 80px;
