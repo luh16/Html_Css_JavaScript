@@ -72,14 +72,14 @@ o span dentro da classe sigup-btn para poder espandir essa borda */
     font-size: 43px;
     width: 640px;
     position:relative;
-    margin-left: 40px;
+    margin-left: 40px; /*todos os magins 40px estão definindo a posição esquerda do site*/
 }
 
 
-.app-text, p{
+.app-text p{
     width: 650px;
     font-size: 15px;
-    margin: 30px 0 30px 0px;
+    margin: 30px 0 30px 40px;
     line-height: 25px;
     color: #919191;
 }
@@ -91,12 +91,88 @@ o span dentro da classe sigup-btn para poder espandir essa borda */
 
 .app-picture img{
     width: 100%;
-    margin-top: -300px;/*aqui estamos ajustando a altura da imagem */
-    padding: 50px; 
+    margin-top: -50px;/*aqui estamos ajustando a altura da imagem */
+    padding-left: 50px; 
 }
 
+.play-btn {
+    margin-left: 40px;
+    display: inline-flex;
+} /*  definimos as posições primeiro*/
 
+.play-btn-inner {
+    height: 50px;
+    width: 50px;
+    border: 2px solid transparent; /*esse comando deixa a borda mais expressiva */
+    border-radius: 50px; 
+    background-image: linear-gradient(#42455a,#42455a),
+    radial-gradient(circle at top left,#fd00da,#19d7f8);
+    background-origin: border-box;
+    background-clip:content-box,border-box;
+    text-align: center;
+}/* e agora as dimensões,embora tenha ficado fora do lugar a borda iremos
+arrumar em .fa a seguir*/
 
+.play-btn-inner .fa {
+    padding: 18px 0;
+    font-size: 13px;
+    cursor: pointer;
+} /*aqui estamos arrumando a dimensão do icone*/
 
+small {
+    margin: auto  20px; /* a margin já está definida pois o small está dentro de play-btn,então assume o mesmo valor, então margin auto resolve */
+    cursor: pointer;
+    font-size: 12px; /*tamanho*/
+    color: #19dafa;
+    letter-spacing: 3px; /*espaço entre as letras*/
+}
 
+.quick-link{
+    
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right,#db1bf6,#19d7f8);
+}
 
+.quick-link ul {
+    display: inline-flex;
+    margin: 15px auto;
+    text-align: center;
+}
+
+.quick-link ul li {
+    list-style: none;
+    margin: 0 50px;
+    cursor: pointer;
+}
+.quick-link ul li .fa{
+    font-size: 25px;
+    font-size: 10px;
+    color: #fff;
+}
+.quick-link ul li p{
+    margin-top: 15px;
+    font-size: 10px;
+    color: #fff ;
+}
+
+.social-icons{
+    right: 72px;
+    bottom: 35px;
+    position: absolute;
+}
+
+.social-icons ul li {
+    list-style: none;
+    margin-top: 15px;
+    text-align: center;
+
+} 
+.social-icons ul li a{
+    color: #999;
+    border-radius: 50%;
+    border: 1px solid #999;
+    padding: 5px;
+    display: block;
+}
