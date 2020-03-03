@@ -9,11 +9,20 @@ body {
     height: 100%;
     background: #42455a;
 }
-
+.main_header .content{
+    padding: 1.5625‬ 0% ;
+}
  .container {
+    
     width: 100%;
-    height: 100%;
+    float: left;
     background: #42455a;
+}
+.content{
+    width: 70.27818448023426%;
+    margin: 0 auto;
+    padding: 1.041666666666667;
+
 }
 
 .menu ul{
@@ -28,6 +37,7 @@ body {
 }
 
 .logo img {
+    
     width: 80px;
     margin-top: -20px;
     margin-right: 40px;
@@ -42,7 +52,12 @@ a:link, a:visited {
 	}
 a:hover {
 	color: #19dafa
-	}
+    }
+
+.main_header .sigup-btn{
+    background-size:  100%auto;
+    max-width: 300px;
+}
 
 .sigup-btn{
     top: 40px;
@@ -56,6 +71,7 @@ a:hover {
     radial-gradient(circle at top left,#fd00da,#19d7f8);
     background-origin: border-box;
     background-clip:content-box,border-box;
+    
     
 } /* até aqui a borda fica toda junta, por isso que criamos
 o span dentro da classe sigup-btn para poder espandir essa borda */
@@ -71,10 +87,14 @@ o span dentro da classe sigup-btn para poder espandir essa borda */
     left: 130px;
     position: absolute;
     color: #fff;
+    
+    background-size:  100%auto;
+   
 }
 .app-text{
     width: 50%;
     float: left;
+    
 }
 
 .app-text h1{
